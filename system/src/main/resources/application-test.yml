@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: test
+  datasource:
+    dynamic:
+      #默认数据源
+      primary: sys
+      datasource:
+        sys:
+          url: jdbc:mysql://172.16.104.101:3306/ywws_sys?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai&nullNamePatternMatchesAll=true
+          username: ywws
+          password: GR2023@hz_user
+          driver-class-name: com.mysql.cj.jdbc.Driver
+#日志记录保存目录(生成日志，根据自己路径更改)
+logging:
+  file:
+    name: ${spring.application.name}
+    path: ./logs/

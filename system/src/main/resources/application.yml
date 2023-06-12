@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: @profile.name@
+  application:
+    name: system
+server:
+  #微服务端口
+  port: 8002
