@@ -1,6 +1,6 @@
 package ${cfg.parent}.repository;
 
-import com.keepsoft.base.TBaseRepository;
+import com.forest.base.TBaseRepository;
 import ${package.Entity}.${entity};
 import ${cfg.parent}.entity.param.${entity}Param;
 import ${package.Mapper}.${table.mapperName};

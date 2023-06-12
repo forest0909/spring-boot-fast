@@ -1,7 +1,7 @@
 package ${package.Mapper};
 
 import ${package.Entity}.${entity};
-import com.keepsoft.base.TBaseMapper;
+import com.forest.base.TBaseMapper;
 
 /**
  * <p>

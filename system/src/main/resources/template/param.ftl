@@ -1,6 +1,6 @@
 package ${cfg.parent}.entity.param;
 
-import com.keepsoft.vo.command.PageCommand;
+import com.forest.vo.command.PageCommand;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
