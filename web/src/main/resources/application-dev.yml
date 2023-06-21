@@ -2,6 +2,7 @@ spring:
   datasource:
     dynamic:
       #默认数据源
+      primary: sys
       datasource:
         sys:
           url: jdbc:mysql://127.0.0.1:3306/spring_boot_fast_sys?characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai&nullNamePatternMatchesAll=true

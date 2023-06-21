@@ -1,6 +1,6 @@
 package ${package.Entity};
 
-import com.forest.model.BaseEntity;
+import com.forest.core.base.BaseEntity;
 import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package ${cfg.parent}.repository.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.forest.base.TBaseRepositoryImpl;
+import com.forest.core.base.TBaseRepositoryImpl;
 import ${package.Entity}.${entity};
 import ${package.Mapper}.${table.mapperName};
 import ${cfg.parent}.repository.${entity}Repository;

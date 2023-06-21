@@ -8,8 +8,6 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-  autoconfigure:
-    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
   # 数据库信息
   datasource:
     druid:
@@ -61,7 +59,7 @@ mybatis-plus:
     banner: false
     db-config:
       #主键类型  0:"数据库ID自增",1:"该类型为未设置主键类型", 2:"用户输入ID",3:"全局唯一ID (数字类型唯一ID)", 4:"全局唯一ID UUID",5:"字符串全局唯一ID (idWorker 的字符串表示)";
-      id-type: ASSIGN_UUID
+      id-type: ASSIGN_ID
       # 默认数据库表下划线命名
       table-underline: true
   configuration:

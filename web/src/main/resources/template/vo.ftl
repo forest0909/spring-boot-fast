@@ -1,11 +1,11 @@
 package ${cfg.parent}.entity.vo;
 
-import com.forest.vo.command.PageCommand;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
 * 描述：${table.comment}vo

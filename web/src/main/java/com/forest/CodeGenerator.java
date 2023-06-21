@@ -1,4 +1,4 @@
-package com.forest.system;
+package com.forest;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;

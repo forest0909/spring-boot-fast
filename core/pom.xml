@@ -76,6 +76,12 @@
       <artifactId>mybatis-plus-generator</artifactId>
       <version>3.4.1</version>
     </dependency>
+    <!-- 动态数据源 -->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+      <version>3.2.0</version>
+    </dependency>
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
@@ -87,6 +93,17 @@
       <artifactId>spring-boot-starter-freemarker</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>com.github.dozermapper</groupId>
+      <artifactId>dozer-core</artifactId>
+      <version>6.5.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
+      <version>1.4.6</version>
+    </dependency>
 
   </dependencies>
 

@@ -1,6 +1,6 @@
 package ${package.ServiceImpl};
 
-import com.forest.base.TBaseServiceImpl;
+import com.forest.core.base.TBaseServiceImpl;
 import ${package.Entity}.${entity};
 import ${package.Mapper}.${table.mapperName};
 import ${cfg.parent}.repository.${entity}Repository;

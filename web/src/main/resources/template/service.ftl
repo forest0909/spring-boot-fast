@@ -1,6 +1,6 @@
 package ${package.Service};
 
-import com.forest.base.TBaseService;
+import com.forest.core.base.TBaseService;
 import ${package.Entity}.${entity};
 import ${superServiceClassPackage};
 import ${cfg.parent}.entity.vo.${entity}Vo;

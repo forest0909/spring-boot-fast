@@ -1,11 +1,12 @@
 package ${cfg.parent}.entity.param;
 
-import com.forest.vo.command.PageCommand;
+import com.forest.core.common.vo.PageParam;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
 * 描述：${table.comment}Param
@@ -13,7 +14,7 @@ import java.math.BigDecimal;
 * @date ${date}
 */
 @Data
-public class ${entity}Param extends PageCommand{
+public class ${entity}Param extends PageParam{
 
 <#-- ----------  BEGIN 字段循环遍历  ---------->
 <#list table.fields as field>

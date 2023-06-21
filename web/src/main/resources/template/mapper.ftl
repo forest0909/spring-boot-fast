@@ -1,7 +1,7 @@
 package ${package.Mapper};
 
 import ${package.Entity}.${entity};
-import com.forest.base.TBaseMapper;
+import com.forest.core.base.TBaseMapper;
 
 /**
  * <p>

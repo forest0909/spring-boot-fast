@@ -8,14 +8,14 @@ import ${package.Entity}.${entity};
 import com.forest.core.common.Result;
 import com.forest.core.common.ResultFactory;
 import javax.annotation.Resource;
-import com.forest.vo.PageVO;
+import com.forest.core.common.vo.PageVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RestController;
-import com.forest.util.DozerUtil;
+import com.forest.core.common.util.DozerUtil;
 
 import ${cfg.parent}.entity.vo.${entity}Vo;
 import ${cfg.parent}.entity.param.${entity}Param;
@@ -45,11 +45,11 @@ public class ${table.controllerName} {
 
     @ApiOperation(value = "列表（分页）")
     @GetMapping("/listPage")
-    public Result<PageVO<${entity}>> listPage(${entity}Param param) {
+    public Result<PageVo<${entity}>> listPage(${entity}Param param) {
         PageHelper.startPage(param.getPageNum(), param.getPageSize());
         List<${entity}> list = ${table.entityPath}Service.list(param);
         PageInfo pageInfo = new PageInfo(list);
-        return ResultFactory.success(PageVO.build(pageInfo));
+        return ResultFactory.success(PageVo.build(pageInfo));
     }
 
     @ApiOperation(value = "列表")
