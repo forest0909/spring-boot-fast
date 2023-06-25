@@ -12,7 +12,7 @@ import java.util.List;
  * </p>
  *
  * @author zzl
- * @since 2023-06-21
+ * @since 2023-06-25
  */
 public interface ISysUserService extends TBaseService<SysUser>{
     /**

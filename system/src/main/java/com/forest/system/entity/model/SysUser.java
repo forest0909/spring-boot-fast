@@ -19,7 +19,7 @@ import java.util.Date;
  * </p>
  *
  * @author zzl
- * @since 2023-06-21
+ * @since 2023-06-25
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -121,6 +121,13 @@ public class SysUser extends BaseEntity implements Serializable {
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date loginDate;
+
+    /**
+     * 删除标志（0代表存在 2代表删除）
+     **/   
+    @ApiModelProperty(value = "删除标志（0代表存在 2代表删除）")
+    @TableField("del_flag")
+    private String delFlag;
 
     /**
      * 备注

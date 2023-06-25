@@ -9,7 +9,7 @@ import com.forest.system.entity.model.SysUser;
  * </p>
  *
  * @author zzl
- * @since 2023-06-21
+ * @since 2023-06-25
  */
 public interface SysUserMapper extends TBaseMapper<SysUser> {
 

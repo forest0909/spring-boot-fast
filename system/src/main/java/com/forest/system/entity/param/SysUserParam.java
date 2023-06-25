@@ -11,7 +11,7 @@ import java.util.Date;
 /**
 * 描述：用户表Param
 * @author zzl
-* @date 2023-06-21
+* @date 2023-06-25
 */
 @Data
 public class SysUserParam extends PageParam{
@@ -91,6 +91,11 @@ public class SysUserParam extends PageParam{
         @ApiModelProperty(value = "最后登录时间 结束时间")
         @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
         private Date loginDateEndTime;
+        /**
+        * 删除标志（0代表存在 2代表删除）
+        **/   
+        @ApiModelProperty(value = "删除标志（0代表存在 2代表删除）")
+        private String delFlag;
         /**
         * 备注
         **/   

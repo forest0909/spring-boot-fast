@@ -10,7 +10,7 @@ import java.util.Date;
 /**
 * 描述：用户表vo
 * @author zzl
-* @date 2023-06-21
+* @date 2023-06-25
 */
 @Data
 public class SysUserVo {
@@ -88,10 +88,15 @@ public class SysUserVo {
         @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
         private Date loginDate;
         /**
+        * 删除标志（0代表存在 2代表删除）
+        **/   
+        @ApiModelProperty(value = "删除标志（0代表存在 2代表删除）")
+        private String delFlag;
+        /**
         * 创建人
         **/   
         @ApiModelProperty(value = "创建人")
-        private String createUser;
+        private String createBy;
         /**
         * 备注
         **/   

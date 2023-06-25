@@ -61,7 +61,7 @@ public class CodeGenerator {
     /**
      * 表名,多个表用 , 隔开 例如：(sys_menu,sys_category）
      */
-    private final static String tableName = "sys_user";
+    private final static String tableName = "sys_role_dept";
 
     public static void main(String[] args) {
         // 代码生成器

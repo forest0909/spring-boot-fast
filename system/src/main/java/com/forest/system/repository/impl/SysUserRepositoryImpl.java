@@ -19,7 +19,7 @@ import java.util.List;
  * </p>
  *
  * @author zzl
- * @since 2023-06-21
+ * @since 2023-06-25
  */
 @Repository
 public class SysUserRepositoryImpl extends TBaseRepositoryImpl<SysUserMapper, SysUser> implements SysUserRepository {
@@ -117,6 +117,11 @@ public class SysUserRepositoryImpl extends TBaseRepositoryImpl<SysUserMapper, Sy
             }
             if (ObjectUtil.isNotNull(param.getLoginDateEndTime())) {
                 wrapper.le(SysUser::getLoginDate,param.getLoginDateEndTime());
+            }
+
+            // 删除标志（0代表存在 2代表删除）
+            if (StrUtil.isNotBlank(param.getDelFlag())) {
+            wrapper.eq(SysUser::getDelFlag, param.getDelFlag());
             }
 
             // 备注
