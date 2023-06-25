@@ -20,7 +20,7 @@ public class ${entity}Vo {
     <#if field.name == "create_time">
         <#continue>
     </#if>
-    <#if field.name == "update_user">
+    <#if field.name == "update_by">
         <#continue>
     </#if>
     <#if field.name == "update_time">

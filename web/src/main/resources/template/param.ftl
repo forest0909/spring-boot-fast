@@ -21,13 +21,13 @@ public class ${entity}Param extends PageParam{
     <#if field.name == "id">
         <#continue>
     </#if>
-    <#if field.name == "create_user">
+    <#if field.name == "create_by">
         <#continue>
     </#if>
     <#if field.name == "create_time">
         <#continue>
     </#if>
-    <#if field.name == "update_user">
+    <#if field.name == "update_by">
         <#continue>
     </#if>
     <#if field.name == "update_time">

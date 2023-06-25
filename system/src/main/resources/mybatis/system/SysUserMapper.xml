@@ -18,15 +18,15 @@
         <result column="admin_flag" property="adminFlag" />
         <result column="login_ip" property="loginIp" />
         <result column="login_date" property="loginDate" />
-        <result column="create_user" property="createUser" />
+        <result column="create_by" property="createBy" />
         <result column="create_time" property="createTime" />
-        <result column="update_user" property="updateUser" />
+        <result column="update_by" property="updateBy" />
         <result column="update_time" property="updateTime" />
         <result column="remark" property="remark" />
     </resultMap>
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, user_name, real_name, password, salt, avatar, sex, email, phone, dept_id, status, admin_flag, login_ip, login_date, create_user, create_time, update_user, update_time, remark
+        id, user_name, real_name, password, salt, avatar, sex, email, phone, dept_id, status, admin_flag, login_ip, login_date, create_by, create_time, update_by, update_time, remark
     </sql>
 
 </mapper>
