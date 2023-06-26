@@ -21,6 +21,7 @@ public class SwaggerConfig {
     @Bean
     public Docket docket(){
         return new Docket(DocumentationType.OAS_30)
+                .groupName("all")
                 .apiInfo(apiInfo()).enable(true)
                 .select()
                 //apis： 添加swagger接口提取范围
@@ -28,6 +29,28 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
                 .build();
+    }
+    /**
+     * 配置swagger的Docket bean
+     * @return
+     */
+    @Bean
+    public Docket docket2() {
+        return new Docket(DocumentationType.OAS_30)  // 指定swagger3.0版本
+                .groupName("system")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.forest.system"))  // 指定扫描的包  常用方式
+                .build()
+                .apiInfo(apiInfo());
+    }
+    @Bean
+    public Docket docket3() {
+        return new Docket(DocumentationType.OAS_30)  // 指定swagger3.0版本
+                .groupName("business")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.forest.business"))  // 指定扫描的包  常用方式
+                .build()
+                .apiInfo(apiInfo());
     }
 
     private ApiInfo apiInfo(){
